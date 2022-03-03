@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yrainy.library.server.mapper.BookMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yrainy.library.server.pojo.Book">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="author" property="author" />
+        <result column="publish" property="publish" />
+        <result column="ISBN" property="isbn" />
+        <result column="introduction" property="introduction" />
+        <result column="language" property="language" />
+        <result column="price" property="price" />
+        <result column="pub_date" property="pubDate" />
+        <result column="class_id" property="classId" />
+        <result column="area_id" property="areaId" />
+        <result column="stock" property="stock" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, author, publish, ISBN, introduction, language, price, pub_date, class_id, area_id, stock
+    </sql>
+
+</mapper>
